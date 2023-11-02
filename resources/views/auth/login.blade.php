@@ -80,12 +80,12 @@
                                     </div>
                                 </form>
 
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <a href="/pendaftaran" type="button" class="btn btn-primary btn-lg btn-block"
                                         tabindex="4">
                                         Registrasi
                                     </a>
-                                </div>
+                                </div> --}}
 
                             </div>
                         </div>
