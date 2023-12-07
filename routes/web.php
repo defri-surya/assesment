@@ -56,6 +56,10 @@ Route::group(['middleware' => ['auth', 'CekRole:superadmin']], function () {
 		Route::resource('rumusdif', 'rumusDifController');
 
 		Route::get('/get-jurusan/{kampus}', 'configController@getJurusan');
+
+		// Assessment Holland
+		Route::resource('soalholland', 'soalHollandController');
+		Route::resource('deskholland', 'deskHollandController');
 	});
 });
 

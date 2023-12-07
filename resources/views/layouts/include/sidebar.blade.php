@@ -56,7 +56,10 @@
                     <a href="#" class="nav-link has-dropdown"><i class="far fa-clipboard"></i><span>Data Soal
                             Tes</span></a>
                     <ul class="dropdown-menu">
-                        <li class="active"><a class="nav-link" href="{{ route('soaldisc.index') }}">DISC</a></li>
+                        <li class="{{ Request::is('soaldisc*') ? 'active' : '' }}"><a class="nav-link"
+                                href="{{ route('soaldisc.index') }}">DISC</a></li>
+                        <li class="{{ Request::is('soalholland*') ? 'active' : '' }}"><a class="nav-link"
+                                href="{{ route('soalholland.index') }}">HOLLAND</a></li>
                     </ul>
                 </li>
 
@@ -66,6 +69,10 @@
                 <li class="nav-item {{ Request::is('kepribadian*') ? 'active' : '' }}"><a class="nav-link"
                         href="{{ route('kepribadian.index') }}"><i class="fas fa-database"></i></i><span>DB
                             Kepribadian</span></a></li>
+
+                <li class="nav-item {{ Request::is('deskholland*') ? 'active' : '' }}"><a class="nav-link"
+                        href="{{ route('deskholland.index') }}"><i class="fas fa-database"></i></i><span>DB
+                            Holland</span></a></li>
 
                 <li
                     class="nav-item dropdown {{ Request::is('rumusmost*') ? 'active' : '' }}{{ Request::is('rumuslest*') ? 'active' : '' }}{{ Request::is('rumusdif*') ? 'active' : '' }}">
