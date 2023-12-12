@@ -15,7 +15,7 @@
 
             <div class="container mt-4">
                 <div class="row justify-content-center">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-6 text-center">
                         <img src="{{ asset('assets') }}/disc1.png" width="330" class="img-fluid" alt="">
                         <div class="row mt-3">
                             <div class="col-md-12 text-center">
@@ -29,15 +29,20 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="col-md-6 text-center">
+                    <div class="col-md-6 text-center">
                         <img src="{{ asset('assets') }}/dcm1.png" width="330" class="img-fluid" alt="">
                         <div class="row mt-3">
                             <div class="col-md-12 text-center">
-                                <a href="{{ route('ujian.dcm') }}" class="btn btn-primary"
-                                    style="border-radius: 15px; background: #f08519;">Start Assessment</a>
+                                @empty($cek)
+                                    <a href="{{ route('exam', 'holland') }}" class="btn btn-primary"
+                                        style="border-radius: 15px; background: #f08519;">Start Assessment</a>
+                                @endempty
+                                @isset($cek)
+                                    <h6>Anda Sudah Melakukan Ujian Holland</h6>
+                                @endisset
                             </div>
                         </div>
-                    </div> --}}
+                    </div>
                 </div>
             </div>
 

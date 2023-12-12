@@ -105,7 +105,12 @@ Route::group(['middleware' => ['auth', 'CekRole:siswa']], function () {
 		Route::get('/ujian/disc', 'ujianController@ujianDisc')->name('ujian.disc');
 		Route::post('/ujian/store', 'ujianController@storedisc')->name('disc.store');
 		Route::get('/hasil/disc', 'ujianController@hasildisc')->name('hasil.disc');
-		Route::get('/ujian/dcm', 'ujianController@ujiandcm')->name('ujian.dcm');
+
+		// HOLLAND
+		Route::get('/exam/{param}/petunjuk', 'ujianController@petunjukujianholland')->name('exam');
+		Route::get('/exam/holland', 'ujianController@ujianHolland')->name('ujian.holland');
+		Route::post('/exam/store', 'ujianController@storeHolland')->name('holland.store');
+		Route::get('/examresult/holland', 'ujianController@hasilHolland')->name('hasil.holland');
 	});
 });
 

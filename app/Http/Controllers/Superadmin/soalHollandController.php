@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Superadmin;
 
 use App\Http\Controllers\Controller;
 use App\SoalHolland;
+use SheetDB\SheetDB;
 use Illuminate\Http\Request;
 
 class soalHollandController extends Controller
