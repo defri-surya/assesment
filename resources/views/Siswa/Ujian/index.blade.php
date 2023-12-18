@@ -33,11 +33,11 @@
                         <img src="{{ asset('assets') }}/dcm1.png" width="330" class="img-fluid" alt="">
                         <div class="row mt-3">
                             <div class="col-md-12 text-center">
-                                @empty($cek)
+                                @empty($cek2)
                                     <a href="{{ route('exam', 'holland') }}" class="btn btn-primary"
                                         style="border-radius: 15px; background: #f08519;">Start Assessment</a>
                                 @endempty
-                                @isset($cek)
+                                @isset($cek2)
                                     <h6>Anda Sudah Melakukan Ujian Holland</h6>
                                 @endisset
                             </div>

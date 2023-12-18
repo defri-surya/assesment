@@ -13,10 +13,15 @@
             <div class="container mt-3 card" style="padding: 20px">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
-                        <h5>Intruksi : Terdapat 198 soal, setiap nomor dibawah ini memuat 4 kalimat.Tugas anda adalah :</h5>
+                        <h5>Instruksi : Terdapat 198 soal yang dibagi menjadi 3 tahapan soal yang dibagi dalam 3 halaman.
+                        </h5>
                         <br>
-                        1. Pilih pada kolom dibawah huruf [P] disamping kalimat yang PALING menggambarkan diri anda. <br>
-                        2. Pilih pada kolom dibawah huruf [K] disamping kalimat yang KURANG mengambarkan diri anda. <br>
+                        Pada tiap-tiap halaman berikut ini terdapat berbagai pilihan pekerjaan dan situasi pekerjaan yang
+                        mungkin akan bersesuaian dengan minat, kompetensi dan pilihan karir Anda.
+                        <br>
+                        Bacalah petunjuk pengisian pada masing-masing bagian. Tidak ada jawaban yang salah. Oleh karena itu
+                        isilah sesuai dengan keadaan diri Anda yang sesungguhnya, dan lengkapilah jawaban Anda pada semua
+                        butir pernyataan.
                         <div class="col-md-12 text-center">
                             <a class="btn btn-lg btn-primary mt-3" href="{{ route('ujian.holland') }}">Mulai Test</a>
                         </div>

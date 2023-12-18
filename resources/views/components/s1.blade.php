@@ -10,57 +10,57 @@
         <tbody>
             <tr>
                 <td>
-                    <input type="radio" name="s1-1" value="0" required />
+                    <input type="radio" name="s1_1" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-2" value="0" required />
+                    <input type="radio" name="s1_2" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-3" value="0" required />
+                    <input type="radio" name="s1_3" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-4" value="0" required />
+                    <input type="radio" name="s1_4" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-5" value="0" required />
+                    <input type="radio" name="s1_5" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-6" value="0" required />
+                    <input type="radio" name="s1_6" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-7" value="0" required />
+                    <input type="radio" name="s1_7" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-8" value="0" required />
+                    <input type="radio" name="s1_8" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-9" value="0" required />
+                    <input type="radio" name="s1_9" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-10" value="0" required />
+                    <input type="radio" name="s1_10" value="0" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-11" value="0" required />
+                    <input type="radio" name="s1_11" value="0" required />
                 </td>
             </tr>
         </tbody>
@@ -78,57 +78,57 @@
         <tbody>
             <tr>
                 <td>
-                    <input type="radio" name="s1-1" value="1" required />
+                    <input type="radio" name="s1_1" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-2" value="1" required />
+                    <input type="radio" name="s1_2" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-3" value="1" required />
+                    <input type="radio" name="s1_3" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-4" value="1" required />
+                    <input type="radio" name="s1_4" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-5" value="1" required />
+                    <input type="radio" name="s1_5" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-6" value="1" required />
+                    <input type="radio" name="s1_6" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-7" value="1" required />
+                    <input type="radio" name="s1_7" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-8" value="1" required />
+                    <input type="radio" name="s1_8" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-9" value="1" required />
+                    <input type="radio" name="s1_9" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-10" value="1" required />
+                    <input type="radio" name="s1_10" value="1" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-11" value="1" required />
+                    <input type="radio" name="s1_11" value="1" required />
                 </td>
             </tr>
         </tbody>
@@ -146,57 +146,57 @@
         <tbody>
             <tr>
                 <td>
-                    <input type="radio" name="s1-1" value="2" required />
+                    <input type="radio" name="s1_1" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-2" value="2" required />
+                    <input type="radio" name="s1_2" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-3" value="2" required />
+                    <input type="radio" name="s1_3" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-4" value="2" required />
+                    <input type="radio" name="s1_4" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-5" value="2" required />
+                    <input type="radio" name="s1_5" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-6" value="2" required />
+                    <input type="radio" name="s1_6" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-7" value="2" required />
+                    <input type="radio" name="s1_7" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-8" value="2" required />
+                    <input type="radio" name="s1_8" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-9" value="2" required />
+                    <input type="radio" name="s1_9" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-10" value="2" required />
+                    <input type="radio" name="s1_10" value="2" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-11" value="2" required />
+                    <input type="radio" name="s1_11" value="2" required />
                 </td>
             </tr>
         </tbody>
@@ -214,57 +214,57 @@
         <tbody>
             <tr>
                 <td>
-                    <input type="radio" name="s1-1" value="3" required />
+                    <input type="radio" name="s1_1" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-2" value="3" required />
+                    <input type="radio" name="s1_2" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-3" value="3" required />
+                    <input type="radio" name="s1_3" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-4" value="3" required />
+                    <input type="radio" name="s1_4" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-5" value="3" required />
+                    <input type="radio" name="s1_5" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-6" value="3" required />
+                    <input type="radio" name="s1_6" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-7" value="3" required />
+                    <input type="radio" name="s1_7" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-8" value="3" required />
+                    <input type="radio" name="s1_8" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-9" value="3" required />
+                    <input type="radio" name="s1_9" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-10" value="3" required />
+                    <input type="radio" name="s1_10" value="3" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-11" value="3" required />
+                    <input type="radio" name="s1_11" value="3" required />
                 </td>
             </tr>
         </tbody>
@@ -282,57 +282,57 @@
         <tbody>
             <tr>
                 <td>
-                    <input type="radio" name="s1-1" value="4" required />
+                    <input type="radio" name="s1_1" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-2" value="4" required />
+                    <input type="radio" name="s1_2" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-3" value="4" required />
+                    <input type="radio" name="s1_3" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-4" value="4" required />
+                    <input type="radio" name="s1_4" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-5" value="4" required />
+                    <input type="radio" name="s1_5" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-6" value="4" required />
+                    <input type="radio" name="s1_6" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-7" value="4" required />
+                    <input type="radio" name="s1_7" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-8" value="4" required />
+                    <input type="radio" name="s1_8" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-9" value="4" required />
+                    <input type="radio" name="s1_9" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-10" value="4" required />
+                    <input type="radio" name="s1_10" value="4" required />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="s1-11" value="4" required />
+                    <input type="radio" name="s1_11" value="4" required />
                 </td>
             </tr>
         </tbody>

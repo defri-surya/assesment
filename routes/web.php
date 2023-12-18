@@ -51,6 +51,7 @@ Route::group(['middleware' => ['auth', 'CekRole:superadmin']], function () {
 		Route::resource('setsoal', 'setSoalController');
 		Route::resource('kepribadian', 'dbKepribadianController');
 		Route::resource('allreportdisc', 'allReportController');
+		Route::resource('allreportholland', 'hasilakhirHollandController');
 		Route::resource('rumusmost', 'rumusMostController');
 		Route::resource('rumuslest', 'rumusLestController');
 		Route::resource('rumusdif', 'rumusDifController');
@@ -70,6 +71,7 @@ Route::group(['middleware' => ['auth', 'CekRole:gurubk']], function () {
 		Route::put('/profil/update/{id}', 'profilController@update')->name('profil.update');
 		Route::resource('siswa', 'siswaController');
 		Route::resource('hasilsemua', 'hasilController');
+		Route::resource('hasilall', 'hasilhollandController');
 		Route::resource('camabas', 'camabasController');
 
 		Route::get('edit-camaba/{id}', 'camabasController@firstedit')->name('firstedit');
@@ -86,6 +88,7 @@ Route::group(['middleware' => ['auth', 'CekRole:afiliator']], function () {
 		Route::put('/profils/update/{id}', 'profilsController@update')->name('profils.update');
 		Route::resource('siswas', 'siswasController');
 		Route::resource('hasilsemuas', 'allReportController');
+		Route::resource('hasilalls', 'hasilhollandController');
 		Route::resource('camabass', 'camabassController');
 		Route::resource('riwayats', 'riwayatsController');
 		Route::resource('gurubkaf', 'gurubkafController');
@@ -110,7 +113,7 @@ Route::group(['middleware' => ['auth', 'CekRole:siswa']], function () {
 		Route::get('/exam/{param}/petunjuk', 'ujianController@petunjukujianholland')->name('exam');
 		Route::get('/exam/holland', 'ujianController@ujianHolland')->name('ujian.holland');
 		Route::post('/exam/store', 'ujianController@storeHolland')->name('holland.store');
-		Route::get('/examresult/holland', 'ujianController@hasilHolland')->name('hasil.holland');
+		Route::get('/hasil/holland', 'ujianController@hasilHolland')->name('hasil.holland');
 	});
 });
 

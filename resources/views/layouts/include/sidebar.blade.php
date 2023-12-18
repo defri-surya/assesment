@@ -91,7 +91,10 @@
                     <a href="#" class="nav-link has-dropdown"><i class="fas fa-flag-checkered"></i><span>Report
                             Tes</span></a>
                     <ul class="dropdown-menu">
-                        <li class="active"><a class="nav-link" href="{{ route('allreportdisc.index') }}">DISC</a></li>
+                        <li class="{{ Request::is('allreportdisc*') ? 'active' : '' }}"><a class="nav-link"
+                                href="{{ route('allreportdisc.index') }}">DISC</a></li>
+                        <li class="{{ Request::is('allreportholland*') ? 'active' : '' }}"><a class="nav-link"
+                                href="{{ route('allreportholland.index') }}">HOLLAND</a></li>
                     </ul>
                 </li>
 
@@ -129,6 +132,8 @@
                     <ul class="dropdown-menu">
                         <li class="{{ Request::is('hasilsemua*') ? 'active' : '' }}"><a class="nav-link"
                                 href="{{ route('hasilsemua.index') }}">DISC</a></li>
+                        <li class="{{ Request::is('hasilall*') ? 'active' : '' }}"><a class="nav-link"
+                                href="{{ route('hasilall.index') }}">HOLLAND</a></li>
                     </ul>
                 </li>
             @endcan
@@ -156,7 +161,10 @@
                     <a href="#" class="nav-link has-dropdown"><i class="fas fa-flag-checkered"></i><span>Report
                             Tes</span></a>
                     <ul class="dropdown-menu">
-                        <li class="active"><a class="nav-link" href="{{ route('hasilsemuas.index') }}">DISC</a></li>
+                        <li class="{{ Request::is('hasilsemuas*') ? 'active' : '' }}"><a class="nav-link"
+                                href="{{ route('hasilsemuas.index') }}">DISC</a></li>
+                        <li class="{{ Request::is('hasilalls*') ? 'active' : '' }}"><a class="nav-link"
+                                href="{{ route('hasilalls.index') }}">HOLLAND</a></li>
                     </ul>
                 </li>
             @endcan
@@ -170,16 +178,20 @@
                 <li class="nav-item {{ Request::is('ujian*') ? 'active' : '' }}"><a class="nav-link"
                         href="{{ route('ujian.index') }}"><i class="fas fa-file-alt"></i> <span>Exam</span></a></li>
 
-                <li class="nav-item {{ Request::is('hasil*') ? 'active' : '' }}"><a class="nav-link"
+                {{-- <li class="nav-item {{ Request::is('hasil*') ? 'active' : '' }}"><a class="nav-link"
                         href="{{ route('hasil.disc') }}"><i class="fas fa-flag-checkered"></i> <span>Hasil
-                            Ujian</span></a></li>
+                            Ujian</span></a></li> --}}
 
-                {{-- <li class="nav-item dropdown {{ Request::is('hasil*') ? 'active' : '' }}">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-flag-checkered"></i><span>Report Tes</span></a>
-                <ul class="dropdown-menu">
-                  <li class="active"><a class="nav-link" href="{{ route('hasil.disc') }}">DISC</a></li>
-                </ul>
-              </li> --}}
+                <li class="nav-item dropdown {{ Request::is('hasil*') ? 'active' : '' }}">
+                    <a href="#" class="nav-link has-dropdown"><i class="fas fa-flag-checkered"></i><span>Hasil
+                            Ujian</span></a>
+                    <ul class="dropdown-menu">
+                        <li class="{{ Request::is('hasil/disc') ? 'active' : '' }}"><a class="nav-link"
+                                href="{{ route('hasil.disc') }}">DISC</a></li>
+                        <li class="{{ Request::is('hasil/holland') ? 'active' : '' }}"><a class="nav-link"
+                                href="{{ route('hasil.holland') }}">HOLLAND</a></li>
+                    </ul>
+                </li>
             @endcan
 
         </ul>

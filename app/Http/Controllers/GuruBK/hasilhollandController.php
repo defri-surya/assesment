@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Superadmin;
+namespace App\Http\Controllers\GuruBK;
 
 use App\DeskHolland;
 use App\HasilakhirHolland;
@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
-class hasilakhirHollandController extends Controller
+class hasilhollandController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +17,11 @@ class hasilakhirHollandController extends Controller
      */
     public function index(Request $request)
     {
-        $data = HasilakhirHolland::when($request->cari, function ($query) use ($request) {
+        $data = HasilakhirHolland::where('sekolahid', auth()->user()->sekolahid)->when($request->cari, function ($query) use ($request) {
             return $query->where('nama', 'LIKE', "%" . $request->cari . "%")
-                ->orWhere('nisn', 'LIKE', "%" . $request->cari . "%")
-                ->orWhere('namasekolah', 'LIKE', "%" . $request->cari . "%");
+                ->orWhere('nisn', 'LIKE', "%" . $request->cari . "%");
         })->paginate(8);
-        return view('Superadmin.HasilHolland.index', compact('data'));
+        return view('GuruBK.HasilHolland.index', compact('data'));
     }
 
     /**
@@ -55,6 +54,10 @@ class hasilakhirHollandController extends Controller
     public function show($hasilsemua)
     {
         $data = HasilakhirHolland::where('id', $hasilsemua)->first();
+        if ($data->sekolahid != auth()->user()->sekolahid) {
+            Alert::warning('Peringatan', 'Bukan id Siswa Anda');
+            return redirect()->back();
+        }
 
         $values = [
             $data->total_R,
@@ -98,7 +101,7 @@ class hasilakhirHollandController extends Controller
         }
         // dd($deskEntities[1]);
 
-        return view('Superadmin.HasilHolland.show', compact('data', 'threeLargest', 'deskEntities'));
+        return view('GuruBK.HasilHolland.show', compact('data', 'threeLargest', 'deskEntities'));
     }
 
     /**

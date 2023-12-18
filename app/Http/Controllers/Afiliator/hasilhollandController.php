@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Superadmin;
+namespace App\Http\Controllers\Afiliator;
 
 use App\DeskHolland;
 use App\HasilakhirHolland;
@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
-class hasilakhirHollandController extends Controller
+class hasilhollandController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +17,12 @@ class hasilakhirHollandController extends Controller
      */
     public function index(Request $request)
     {
-        $data = HasilakhirHolland::when($request->cari, function ($query) use ($request) {
+        $data = HasilakhirHolland::where('afiliatorid', auth()->user()->id)->when($request->cari, function ($query) use ($request) {
             return $query->where('nama', 'LIKE', "%" . $request->cari . "%")
                 ->orWhere('nisn', 'LIKE', "%" . $request->cari . "%")
                 ->orWhere('namasekolah', 'LIKE', "%" . $request->cari . "%");
         })->paginate(8);
-        return view('Superadmin.HasilHolland.index', compact('data'));
+        return view('Afiliator.HasilHolland.index', compact('data'));
     }
 
     /**
@@ -98,7 +98,7 @@ class hasilakhirHollandController extends Controller
         }
         // dd($deskEntities[1]);
 
-        return view('Superadmin.HasilHolland.show', compact('data', 'threeLargest', 'deskEntities'));
+        return view('Afiliator.HasilHolland.show', compact('data', 'threeLargest', 'deskEntities'));
     }
 
     /**
