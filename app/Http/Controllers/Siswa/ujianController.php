@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Siswa;
 use App\hasilakhir;
 use App\HasilakhirHolland;
 use App\Http\Controllers\Controller;
+use App\kategori;
 use App\setsoal;
 use App\soaldisc;
 use App\SoalHolland;
@@ -20,7 +21,17 @@ class ujianController extends Controller
     {
         $cek = hasilakhir::where('userid', auth()->user()->id)->first();
         $cek2 = HasilakhirHolland::where('userid', auth()->user()->id)->first();
-        return view('Siswa.Ujian.index', compact('cek', 'cek2'));
+
+        $ceksoalDISC = setsoal::where('kategorisoalid', 1)->first();
+        $cekKategoriDISC = $ceksoalDISC ? kategori::where('id', $ceksoalDISC->kategorisoalid)->exists() : false;
+
+        $ceksoalHolland = setsoal::where('kategorisoalid', 2)->first();
+        $cekKategoriHolland = $ceksoalHolland ? kategori::where('id', $ceksoalHolland->kategorisoalid)->exists() : false;
+
+        $ceksoalAll = setsoal::where('kategorisoalid', 3)->first();
+        $cekKategoriAll = $ceksoalAll ? kategori::where('id', $ceksoalAll->kategorisoalid)->exists() : false;
+
+        return view('Siswa.Ujian.index', compact('cek', 'cek2', 'cekKategoriDISC', 'cekKategoriHolland', 'cekKategoriAll'));
     }
 
     public function ujianDisc()

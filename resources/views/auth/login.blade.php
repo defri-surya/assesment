@@ -32,9 +32,9 @@
                                 {{-- <div class="col-md-4 col-6 col-lg-4">
                                     <img width="100" src="{{ asset('front') }}/images/indi.png" alt="">
                                 </div> --}}
-                                <div class="col-md-4 col-6 col-lg-4">
+                                {{-- <div class="col-md-4 col-6 col-lg-4">
                                     <img width="100" src="{{ asset('front') }}/images/abkin.png" alt="">
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
 
