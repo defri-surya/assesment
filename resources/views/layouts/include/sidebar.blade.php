@@ -30,8 +30,6 @@
                         <li class="{{ Request::is('camaba*') ? 'active' : '' }}"><a class="nav-link"
                                 href="{{ route('camaba.index') }}"><i class="fas fa-user"></i> <span>Data Camaba</span></a>
                         </li>
-                        {{-- <li class="nav-item {{ Request::is('user*') ? 'active' : '' }}"><a class="nav-link"
-                                            href="{{ route('user.index') }}"><i class="fas fa-user"></i> <span>Data User</span></a></li> --}}
                         <li class="{{ Request::is('sekolah*') ? 'active' : '' }}"><a class="nav-link"
                                 href="{{ route('sekolah.index') }}"><i class="fas fa-home"></i> <span>Data
                                     Sekolah</span></a>
@@ -52,7 +50,8 @@
                         href="{{ route('kategori.index') }}"><i class="fas fa-clone"></i> <span>Kategori Soal</span></a>
                 </li>
 
-                <li class="nav-item dropdown {{ Request::is('soal*') ? 'active' : '' }}">
+                <li
+                    class="nav-item dropdown {{ Request::is('soal*') ? 'active' : '' }}{{ Request::is('soalholland*') ? 'active' : '' }}">
                     <a href="#" class="nav-link has-dropdown"><i class="far fa-clipboard"></i><span>Data Soal
                             Tes</span></a>
                     <ul class="dropdown-menu">
@@ -87,7 +86,8 @@
                     </ul>
                 </li>
 
-                <li class="nav-item dropdown {{ Request::is('allreportdisc*') ? 'active' : '' }}">
+                <li
+                    class="nav-item dropdown {{ Request::is('allreportdisc*') ? 'active' : '' }}{{ Request::is('allreportholland*') ? 'active' : '' }}">
                     <a href="#" class="nav-link has-dropdown"><i class="fas fa-flag-checkered"></i><span>Report
                             Tes</span></a>
                     <ul class="dropdown-menu">
@@ -126,7 +126,8 @@
                         href="{{ route('camabas.index') }}"><i class="fas fa-users"></i> <span>Data Camaba</span></a>
                 </li>
 
-                <li class="nav-item dropdown {{ Request::is('hasilsemua*') ? 'active' : '' }}">
+                <li
+                    class="nav-item dropdown {{ Request::is('hasilsemua*') ? 'active' : '' }}{{ Request::is('hasilall*') ? 'active' : '' }}">
                     <a href="#" class="nav-link has-dropdown"><i
                             class="fas fa-flag-checkered"></i><span>Report</span></a>
                     <ul class="dropdown-menu">
@@ -157,7 +158,8 @@
                         href="{{ route('camabass.index') }}"><i class="fas fa-users"></i> <span>Data Camaba</span></a>
                 </li>
 
-                <li class="nav-item dropdown {{ Request::is('hasilsemuas*') ? 'active' : '' }}">
+                <li
+                    class="nav-item dropdown {{ Request::is('hasilsemuas*') ? 'active' : '' }}{{ Request::is('hasilalls*') ? 'active' : '' }}">
                     <a href="#" class="nav-link has-dropdown"><i class="fas fa-flag-checkered"></i><span>Report
                             Tes</span></a>
                     <ul class="dropdown-menu">
@@ -177,11 +179,6 @@
                         href="{{ route('profilsiswa.index') }}"><i class="fas fa-user"></i> <span>Profil</span></a></li>
                 <li class="nav-item {{ Request::is('ujian*') ? 'active' : '' }}"><a class="nav-link"
                         href="{{ route('ujian.index') }}"><i class="fas fa-file-alt"></i> <span>Exam</span></a></li>
-
-                {{-- <li class="nav-item {{ Request::is('hasil*') ? 'active' : '' }}"><a class="nav-link"
-                        href="{{ route('hasil.disc') }}"><i class="fas fa-flag-checkered"></i> <span>Hasil
-                            Ujian</span></a></li> --}}
-
                 <li class="nav-item dropdown {{ Request::is('hasil*') ? 'active' : '' }}">
                     <a href="#" class="nav-link has-dropdown"><i class="fas fa-flag-checkered"></i><span>Hasil
                             Ujian</span></a>
@@ -206,10 +203,5 @@
                 @csrf
             </form>
         </div>
-        {{-- <div class="mb-4 p-3 hide-sidebar-mini">
-          <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
-            <i class="fas fa-rocket"></i> Documentation
-          </a>
-        </div> --}}
     </aside>
 </div>
