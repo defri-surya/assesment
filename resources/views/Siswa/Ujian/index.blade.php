@@ -29,7 +29,7 @@
                 @endif
                 @if ($cekKategoriHolland)
                     <div class="col-md-6 text-center">
-                        <img src="{{ asset('assets') }}/dcm1.png" width="330" class="img-fluid" alt="">
+                        <img src="{{ asset('assets') }}/holland.png" width="330" class="img-fluid" alt="">
                         <div class="row mt-3">
                             <div class="col-md-12 text-center">
                             @empty($cek2)
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="col-md-6 text-center">
-                <img src="{{ asset('assets') }}/dcm1.png" width="330" class="img-fluid" alt="">
+                <img src="{{ asset('assets') }}/holland.png" width="330" class="img-fluid" alt="">
                 <div class="row mt-3">
                     <div class="col-md-12 text-center">
                     @empty($cek2)
