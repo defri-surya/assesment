@@ -70,6 +70,11 @@
                 <div class="card">
                     <div class="card-body">
                         <p>
+                            <b>
+                                Berdasarkan tes yang telah dilakukan, diperoleh 3 minat tertinggi, yaitu :
+                            </b>
+                        </p>
+                        <p>
                             @php
                                 $no = 1;
                             @endphp

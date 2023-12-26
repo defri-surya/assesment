@@ -31,7 +31,7 @@
                                                     @php
                                                         $no = 1;
                                                     @endphp
-                                                    @forelse ($data as $item)
+                                                    @forelse ($dataholland as $item)
                                                         <tr>
                                                             <td>{{ $no++ }}</td>
                                                             <td>{{ $item->nama }}</td>

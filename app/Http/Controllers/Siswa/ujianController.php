@@ -289,8 +289,7 @@ class ujianController extends Controller
 
     public function hasilHolland()
     {
-        // $data = hasilakhir::where('userid', auth()->user()->id)->get();
         $dataholland = HasilakhirHolland::where('userid', auth()->user()->id)->get();
-        return view('Siswa.Ujian.hasilholland', compact(/* 'data',  */'dataholland'));
+        return view('Siswa.Ujian.Holland.hasilholland', compact('dataholland'));
     }
 }
